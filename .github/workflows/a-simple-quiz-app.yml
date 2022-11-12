@@ -26,6 +26,8 @@ jobs:
         #with:
           #python-version: ${{ env.PYTHON_VERSION }}
           #cache: 'pip'
+      - name: Find re
+        run : find -name "requirements.txt"
 
       - name: Create and start virtual environment
         run: |
